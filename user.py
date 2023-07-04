@@ -46,9 +46,9 @@ class UserData:
         print(self.is_rewards_member)
         print(self.gold_card_points)   
 
-    def spend_points(self):
-        self.gold_card_points -= 50   
-        print(f"you spent {self.amount} points!")
+    def spend_points(self,x):  
+        print(f"you spent {x} points!")
+        self.gold_card_points -= x
         print(f"Your balance is {self.gold_card_points} points!")  
         
 
@@ -59,8 +59,8 @@ print(user_2.age,user_2.email,user_2.first_name,user_2.last_name,user_2.gold_car
 
 # user_1.hello()
 # user_1.enroll()
-user_1.spend_points()
-user_2.spend_points()
+user_1.spend_points(50)
+user_2.spend_points(50)
         
 
 
